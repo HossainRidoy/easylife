@@ -1,0 +1,62 @@
+@import "../../assets/golobalStyle/index.scss";
+
+.radio {
+    font-size: 20px;
+    border: 1px solid rgb(211, 211, 211);
+    width: 320px;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgb(211, 211, 211);
+        border-radius: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 260px;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        width: 22px;
+        height: 22px;
+        border-radius: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 264px;
+    }
+    &:hover {
+        border-color: $orange !important;
+    }
+}
+
+.formControl {
+    width: 100%;
+    padding: 18px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #F4F4F4;
+    &:focus{
+        outline: none;
+    }
+}
+
+.radioInput:checked + {
+    ::after {
+        background-color: $orange !important;
+    }
+    ::before {
+        border-color: $orange !important;
+    }
+    .radio {
+        border-color: $orange !important;
+    }
+}
+@media only screen and (max-width: 991px) {
+}
+@media only screen and (max-width: 767px) {
+}

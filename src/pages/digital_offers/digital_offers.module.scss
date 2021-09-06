@@ -1,0 +1,105 @@
+@import "../../assets/golobalStyle/index.scss";
+
+.card {
+    border-right: 1px solid $blue;
+    padding: 10px 0;
+    margin-right: 20px;
+
+    .clickTitlePrent {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 25px;
+            height: 25px;
+            background-color: $white;
+            border-top: 1px solid $blue;
+            border-right: 1px solid $blue;
+            transform: rotate(45deg);
+            top: 0;
+            right: -13px;
+        }
+        .title {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 80px;
+                height: 5px;
+                background-color: $orange;
+                bottom: -12px;
+                left: 0;
+                border-radius: 5px;
+            }
+        }
+    }
+    .titlePrent{
+        margin: 40px 0;
+        cursor: pointer;
+    }
+}
+
+.cards {
+    border-radius: 25px;
+    transition: 0.5s;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    .cardBody {
+        padding: 15px 15px 0 15px;
+        background-color: $white;
+        border-radius: 25px;
+    }
+    .button {
+       border: none;
+       background-color: transparent;
+       font-size: 18px;
+       font-weight: 600;
+       position: relative;
+       &::before{
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: $orange;
+        bottom: 0;
+        left: 0;
+        transition: all .3s linear;
+       }
+       &:hover{
+        &::before{
+            width: 100%;
+        }
+        
+       }
+    }
+    .image{
+        transition: all .5s linear;
+    }
+    &:hover {
+       .image{
+           transform: scale(1.1);
+       }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .card {
+        border-right: none !important;
+      
+        .clickTitlePrent {
+    
+            &::before {
+               
+                width: 15px;
+                height: 15px;
+              
+                border-top: 2px solid $blue;
+                border-right: 2px solid $blue;
+                transform: rotate(135deg);
+                right:0;
+            }
+           
+            
+        }
+    }
+    
+}

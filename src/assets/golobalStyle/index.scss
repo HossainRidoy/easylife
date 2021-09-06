@@ -1,0 +1,272 @@
+$orange: #ffb74d;
+$blue: #3841a2;
+$blue-light: #ecf6ff;
+$white: #ffffff;
+$black: #000000;
+
+body {
+    font-size: 16px;
+    // line-height: 1.6;
+    font-weight: 400;
+}
+// font size
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+// LineHeight start
+p {
+    line-height: 1.9 !important;
+}
+// LineHeight end
+
+// Background Color Start
+.bg-color-blue {
+    background-color: $blue;
+}
+.bg-color-orange {
+    background-color: $orange;
+}
+.bg-color-blue-light {
+    background-color: $blue-light;
+}
+// Background Color End
+// Text Color Start
+.text-color-blue {
+    color: $blue;
+}
+.text-color-orange {
+    color: $orange;
+}
+// Text Color End
+
+h1 {
+    font-size: 56px;
+    // line-height: 1.6;
+}
+h2 {
+    font-size: 36px;
+    // line-height: 1.6;
+}
+h3 {
+    font-size: 24px;
+    // line-height: 1.6;
+}
+
+// font size start
+.font-size-18 {
+    font-size: 18px;
+}
+.font-size-20 {
+    font-size: 20px;
+}
+.font-size-24 {
+    font-size: 24px;
+}
+// font size end
+
+// font weight start
+.font-weight-thin {
+    font-weight: 100;
+}
+.font-weight-light {
+    font-weight: 300;
+}
+.font-weight-regular {
+    font-weight: 400;
+}
+.font-weight-semi-bold {
+    font-weight: 500;
+}
+.font-weight-bold {
+    font-weight: 700;
+}
+.font-weight-black {
+    font-weight: 900;
+}
+// font weight end
+
+//margin start
+.margin-buttom {
+    margin-bottom: 120px;
+}
+//margin end
+
+.white-outline-btn {
+    width: 157px;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 15px 0px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid white;
+    color: white;
+    transition: 0.3s;
+    &:hover {
+        background-color: $orange;
+        border: 1px solid $orange;
+        color: black;
+    }
+}
+.black-outline-btn {
+    width: 170px;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 15px 0px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid black;
+    color: black;
+    transition: 0.3s;
+    &:hover {
+        background-color: $orange;
+        border: 1px solid $orange;
+        color: black;
+    }
+}
+
+// mobile slde start
+#mobileSlide {
+    width: 350px;
+    height: 685px;
+    background: #e7e7e7;
+    border-radius: 60px;
+    position: relative;
+    box-shadow: inset 0px 0px 20px 0px #b6b6b6;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 50px;
+        background-color: #e7e7e7;
+        top: 117px;
+        left: -6px;
+        border-radius: 20px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 50px;
+        background-color: #e7e7e7;
+        top: 180px;
+        left: -6px;
+        border-radius: 20px;
+    }
+    .power-button {
+        position: absolute;
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 100px;
+        background-color: #e7e7e7;
+        top: 117px;
+        right: -6px;
+        border-radius: 20px;
+    }
+    .mobile_body {
+        position: absolute;
+        width: 90%;
+        height: 95%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 40px;
+        overflow: hidden;
+        &::before {
+            position: absolute;
+            content: "";
+            position: absolute;
+            width: 165px;
+            height: 25px;
+            background-color: #e7e7e7;
+            top: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 0 0 20px 20px;
+            z-index: 1;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 6px;
+            background-color: #00000029;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 20px;
+            z-index: 1;
+        }
+    }
+    .slick-dots {
+        bottom: 40px;
+    }
+
+    .slick-dots li button:before {
+        color: $orange;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: $orange;
+    }
+}
+// mobile slde end
+
+@media only screen and (max-width: 1300px) {
+    .container {
+        max-width: 1300px !important;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width: 1301px) {
+    .container {
+        max-width: 95% !important;
+    }
+}
+
+.slick-list {
+    margin: 0 -15px !important;
+}
+
+.slick-slide > div {
+    padding: 0 15px !important;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    padding: 10px 0;
+}
+
+@media only screen and (max-width: 991px) {
+}
+@media only screen and (max-width: 767px) {
+    .white-outline-btn {
+        width: 150px;
+    }
+    .black-outline-btn {
+        width: 150px;
+    }
+}
+
+#mobileSlide {
+    position: relative;
+    .slick-dots {
+        bottom: 20%;
+    }
+}

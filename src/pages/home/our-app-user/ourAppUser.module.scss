@@ -1,0 +1,39 @@
+
+.card1 {
+    background-color: #ecf6ff !important;
+    .title {
+        color: #1a237e;
+    }
+}
+
+.card2 {
+    background-color: #ffeeed !important;
+    .title2 {
+        color: #f71304;
+    }
+}
+.card3 {
+    background-color: #fff7ed !important;
+    .title3 {
+        color: #f59321;
+    }
+}
+.card{
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.25s linear;
+    top: 0;
+    &:hover{
+        background-color: white !important;
+        box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.2);
+        top: -10px;
+        transform: scale(1.01);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+@media only screen and (max-width: 767px) {
+
+}

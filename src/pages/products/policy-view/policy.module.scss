@@ -1,0 +1,32 @@
+.policyTop{
+   .cardTop{
+       background-color: aliceblue;
+       .card{
+           background-color: white;
+           border-radius: 20px;
+           margin-bottom: 30px;
+           .image{
+               border-radius: 20px;
+               width: 100%;
+           }
+       }
+   }
+}
+
+.cardHeader{
+    width: 700px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+
+@media only screen and (max-width: 991px) {
+
+}
+@media only screen and (max-width: 767px) {
+    .cardHeader{
+        width: 100% !important;
+        margin: auto;
+        padding: 50px 0;
+    }
+}

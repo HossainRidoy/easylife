@@ -1,0 +1,12 @@
+@import "../../assets/golobalStyle/index.scss";
+
+.formControl {
+    width: 100%;
+    padding: 15px;
+    border-radius: 18px;
+    border: none;
+    background-color: rgb(247, 247, 247);
+    &:focus-visible{
+        outline: none !important;
+    }
+}

@@ -1,0 +1,77 @@
+@import "../../../assets//golobalStyle/index.scss";
+
+.navbarTop {
+    // border-bottom: 2px solid $secondary;
+    .logo {
+        width: 250px;
+    }
+
+    .navLink {
+        color: black;
+        transition: 0.3s;
+
+        &:hover {
+            color: $orange !important;
+        }
+        &.active{
+           color: $orange;
+        }
+    }
+    .bangla {
+        transition: 0.3s;
+        &:hover {
+            color: $orange !important;
+        }
+    }
+    .menuBar {
+        width: 18px;
+        margin-left: 20px;
+        cursor: pointer;
+        position: relative;
+        padding: 40px 0;
+        .dropdownMenu {
+            position: absolute;
+            width: 250px;
+            background-color: white;
+            top: 130%;
+            left: -110px;
+            border-radius: 0 0 15px 15px;
+            transition: 0.3s;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 9999;
+            .dropdownList {
+                font-size: 20px;
+                color: black;
+                border-bottom: 1px solid black;
+                margin: 0 15px;
+                padding: 17px 0;
+                transition: 0.3s;
+                &:last-child {
+                    border: none;
+                }
+                &:hover {
+                    color: $orange;
+                    border-color: $orange;
+                }
+            }
+        }
+        &:hover {
+            .dropdownMenu {
+                top: 100%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    .headerButton {
+        margin-left: 20px;
+        padding: 15px 30px;
+        background-color: $orange;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 30px;
+    }
+}
+

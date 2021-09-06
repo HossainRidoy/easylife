@@ -1,0 +1,11 @@
+@import "../../assets/golobalStyle/index.scss";
+
+.clickBtn{
+    padding: 10px 0;
+    border: none;
+    border-radius: 100px;
+    &.active{
+        background-color: $blue !important;
+        color: white !important;
+    }
+}

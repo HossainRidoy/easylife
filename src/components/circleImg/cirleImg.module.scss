@@ -1,0 +1,33 @@
+.cirleHead {
+    width: 650px;
+    height: 700px;
+    position: relative;
+    .cirle {
+        width: 400px;
+        height: 400px;
+        border-radius: 100%;
+        padding: 12px;
+        background-color: white;
+        position: absolute;
+        transition: 0.5s;
+        &:hover {
+            transform: scale(1.1);
+            z-index: 5;
+        }
+    }
+    .cirle1 {
+        top: 25%;
+        left: 0;
+        z-index: 2;
+    }
+    .cirle2 {
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .cirle3 {
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+    }
+}
